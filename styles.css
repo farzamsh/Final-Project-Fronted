@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#search-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#location-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  width: 300px;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+#location-input:focus {
+  border-bottom-color: #ffcc00;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover {
+  background-color: #ffcc00;
+}
+
+#forecast-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#location-name {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#current-weather {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#current-weather-icon {
+  width: 120px;
+  height: 120px;
+  background-color: #ccc;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#current-temperature {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#current-description {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+#forecast-details {
+  margin-bottom: 20px;
+}
+
+#forecast-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.forecast-item p {
+  margin: 0;
+  margin-top: 5px;
+  font-style: italic;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  #forecast-list {
+    flex-direction: column;
+  }
+  
+  .forecast-item {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}

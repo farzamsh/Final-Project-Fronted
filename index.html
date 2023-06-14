@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Weather Forecast</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="app">
-      <h1>Weather Forecast</h1>
-      <form>
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city">
-        <button type="submit">Get Forecast</button>
-      </form>
-      <div id="forecast"></div>
+<head>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Forecast</h1>
+  </header>
+
+  <section id="search-section">
+    <input type="text" id="location-input" placeholder="Enter location">
+    <button id="search-button">Search</button>
+  </section>
+
+  <section id="forecast-section">
+    <h2 id="location-name"></h2>
+    <div id="current-weather">
+      <h3>Current Weather</h3>
+      <div id="current-weather-icon"></div>
+      <p id="current-temperature"></p>
+      <p id="current-description"></p>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <div id="forecast-details">
+      <h3>Forecast Details</h3>
+      <div id="forecast-list"></div>
+    </div>
+
+    <div id="tomorrow-section">
+      <h3>Tomorrow's Forecast</h3>
+      <div id="tomorrow-weather-icon"></div>
+      <p id="tomorrow-temperature"></p>
+      <p id="tomorrow-description"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
