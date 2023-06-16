@@ -1,5 +1,5 @@
-const API_KEY = "c1a972e5067612865f56d0caf398c8f1";
-const API_URL = "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=c1a972e5067612865f56d0caf398c8f1";
+const API_KEY = "#############";
+const API_URL = "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=############";
 const headerContainer = document.querySelector("header");
 const locInput = document.getElementById("location-input");
 const locButton = document.getElementById("search-button");
@@ -28,7 +28,7 @@ function getWeather() {
 
   // Make a request to the OpenWeatherMap API
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=c1a972e5067612865f56d0caf398c8f1");
+  xhr.open("GET", "https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=#############");
   xhr.onload = function() {
     // Get the weather data from the response
     var weatherData = JSON.parse(xhr.responseText);
