@@ -8,20 +8,43 @@
 
 <body>
   <div class="container">
-  <div class="container-left">
-    <div class="center-containter">
-    <header>
-      <h1 id="headline">Weather Forecast</h1>
-    </header>
+    <div class="container-left">
+      <div class="center-containter">
+        <header>
+          <h1 id="headline">Weather Forecast</h1>
+        </header>
 
-    <section id="search-section">
-      <input type="text" id="location-input" placeholder="Enter location">
-      <button id="search-button">Search</button>
-    </section>
+        <section id="search-section">
+          <input type="text" id="location-input" placeholder="Enter location">
+          <button id="search-button">Search</button>
+        </section>
+      </div>
+    </div>
+    <div class="container-right">
+      <div class="left-side" id="innerleft">
+        <div class="city-info">
+          <div class="name-temperature">city name and temperature</div>
+          <!-- <div class="temperature">temperature number</div> -->
+          <div class="weather-picture"><img src="/images/sun.jpg" alt=""></div>
+        </div>
+        <div class="today-forecast"> today forecast</div>
+        <div class="air-condition">air-condition </div>
+      </div>
+      <div class="right-side">
+        <div class="week-forecast">
+          week-forecast
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  <div class="container-right">
-    <section id="forecast-section">
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <section id="forecast-section">
       <h2 id="location-name"></h2>
       <div id="current-weather">
         <h3>Current Weather</h3>
@@ -41,10 +64,4 @@
         <p id="tomorrow-temperature"></p>
         <p id="tomorrow-description"></p>
       </div>
-    </section>
-  </div>
-</div>
-  <script src="script.js"></script>
-</body>
-
-</html>
+    </section> -->

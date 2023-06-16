@@ -15,6 +15,16 @@ const tomorrowWeatherIcon = document.getElementById("tomorrow-weather-icon");
 const tomorrowTemperature = document.getElementById("tomorrow-temperature");
 const tomorrowDescription = document.getElementById("tomorrow-description");
 
+
+// Add an event listener to the search button and get the value of the input field when the button is clicked
+locInput.addEventListener("keyup", (event) => {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    searchButton.click();
+  }
+  console.log(locInput.value);
+});
+
 searchButton.addEventListener("click", () => {
   const location = locationInput.value;
   introAnimation();
@@ -81,8 +91,8 @@ const introAnimation = () => {
   
   const containerLeft = document.querySelector(".container-left");
   const containerRight = document.querySelector(".container-right");
-  containerLeft.style = "width: 50%;";
-  containerRight.style = "display: flex; width: 50%; ";
+  containerLeft.style = "width: 45%;";
+  containerRight.style = "display: flex; width: 55%; ";
   headline.style = "font-size: 40px;";
   locInput.style = "  width: 400px;";
 }
